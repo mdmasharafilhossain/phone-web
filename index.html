@@ -9,16 +9,41 @@
 </head>
 <body>
     <header>
-
+         <h2 class="text-7xl font-bold text-center mt-20">Hunting Phone</h2>
     </header>
 
-    <main>
+    <main class="container mx-auto mt-10">
 
+      <!-- searching item  -->
+      <section class="bg-gray-100 p-6 rounded-xl m-4">
+        <input id="search-bar" type="text" placeholder="Search...." class="input input-bordered w-full max-w-xs" />
+        <button onclick="HandleSerach()" class="btn btn-neutral">Search</button>
+      </section>
+
+
+
+        <!-- Search result section  -->
+          <section>
+
+            <div id="loading-spinner"  class="text-center my-80 hidden">
+              <span class="loading loading-spinner loading-lg "></span>
+            </div>
+               <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+               
+
+               </div>
+               <!-- Show All Button -->
+              <div id="Show-All-Container" class="hidden text-center mt-10 mb-10">
+                <button class="btn btn-outline btn-success">Show All</button>
+              </div>
+          </section>
 
     </main>
 
     <footer>
         
     </footer>
+
+    <script src="./js/phone.js"></script>
 </body>
 </html>
